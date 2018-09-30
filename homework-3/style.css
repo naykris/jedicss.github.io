@@ -122,7 +122,7 @@ img{
 .movies-catalog__list{
 	display: flex;
 	flex-wrap: wrap;
-	/* margin: 0 -10px; */
+	margin: 0 -10px;
 	padding: 0;
 	list-style: none;
 }
@@ -133,7 +133,7 @@ img{
 	margin-bottom: 20px;
 	max-width: calc(25% - 20px);
 }
-
+/* 
 .movies-catalog__list-item:first-child {
 	margin-left: 0;
 }
@@ -141,7 +141,7 @@ img{
 .movies-catalog__list-item:last-child {
 	margin-right: 0;
 }
-
+ */
 
 .movie-card{
 	height: 100%;
