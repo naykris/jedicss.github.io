@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Movies Catalog – JediCSS</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="movies-catalog">
+		<div class="movies-catalog__filters">
+			<ul class="tabs-list">
+				<li class="tabs-list__item">
+					<a href="#" class="tabs-list__link tabs-list__link--active">Trending</a>
+				</li>
+				<li class="tabs-list__item">
+					<a href="#" class="tabs-list__link">Top Rated</a>
+				</li>
+				<li class="tabs-list__item">
+					<a href="#" class="tabs-list__link">New Arrivals</a>
+				</li>
+				<li class="tabs-list__item">
+					<a href="#" class="tabs-list__link">Trailers</a>
+				</li>
+				<li class="tabs-list__item">
+					<a href="#" class="tabs-list__link">Coming Soon</a>
+				</li>
+				<li class="tabs-list__item">
+					<a href="#" class="tabs-list__link tabs-list__link--drop-down">Genre</a>
+				</li>
+			</ul>
+			<ul class="panel-view">
+				<li class="panel-view__item">
+					<button class="btn-view btn-view--grid btn-view--active">Плиткой</button>
+				</li>
+				<li class="panel-view__item">
+					<button class="btn-view btn-view--table">Таблицей</button>
+				</li>
+			</ul>
+		</div>
+		<div class="movies-catalog__content">
+			<ul class="movies-catalog__list">
+				<li class="movies-catalog__list-item">
+					<a href="#" class="movie-card">
+						<div class="movie-card__cover">
+							<img src="img/fantastic-beasts.jpg"
+								 srcset="img/fantastic-beasts@2x.jpg 2x"
+							 />
+						</div>
+						<div class="movie-card__info">
+							<h2 class="movie-card__title">fantastic beasts and where to find them</h2>
+							<p class="movie-card__movie-rating">4.7</p>
+							<p class="movie-card__genre">Adventure, Family, Fantasy</p>
+						</div>
+					</a>
+				</li>
+				<li class="movies-catalog__list-item">
+					<a href="#" class="movie-card">
+						<div class="movie-card__cover">
+							<img src="img/creed.png"
+								 srcset="img/creed@2x.png 2x,
+										 img/creed@3x.png 3x"
+							/>
+						</div>
+						<div class="movie-card__info">
+							<h2 class="movie-card__title">AssAssin’s Creed</h2>
+							<p class="movie-card__movie-rating">4.2</p>
+							<p class="movie-card__genre">Action, Adventure, Fantasy</p>
+						</div>
+					</a>
+				</li>
+				<li class="movies-catalog__list-item">
+					<a href="#" class="movie-card">
+						<div class="movie-card__cover">
+							<img src="img/nowyouseeme.png"
+								 srcset="img/nowyouseeme@2x.png 2x,
+										 img/nowyouseeme@3x.png 3x"
+							 />
+						</div>
+						<div class="movie-card__info">
+							<h2 class="movie-card__title">Now you see me 2</h2>
+							<p class="movie-card__movie-rating">4.4</p>
+							<p class="movie-card__genre">Action, Adventure, Comedy</p>
+						</div>
+					</a>
+				</li>
+				<li class="movies-catalog__list-item">
+					<a href="#" class="movie-card">
+						<div class="movie-card__cover">
+							<img src="img/tarzan.jpg">
+						</div>
+						<div class="movie-card__info">
+							<h2 class="movie-card__title">The legend of tarzan</h2>
+							<p class="movie-card__movie-rating">4.3</p>
+							<p class="movie-card__genre">Action, Adventure, Drama</p>
+						</div>
+					</a>
+				</li>
+				<li class="movies-catalog__list-item hidden">
+					<a href="#" class="movie-card">
+						<div class="movie-card__cover">
+							<img src="img/creed.png"
+								 srcset="img/creed@2x.png 2x,
+										 img/creed@3x.png 3x"
+							/>
+						</div>
+						<div class="movie-card__info">
+							<h2 class="movie-card__title">AssAssin’s Creed</h2>
+							<p class="movie-card__movie-rating">4.2</p>
+							<p class="movie-card__genre">Action, Adventure, Fantasy</p>
+						</div>
+					</a>
+				</li>
+				<li class="movies-catalog__list-item hidden">
+					<a href="#" class="movie-card">
+						<div class="movie-card__cover">
+							<img src="img/nowyouseeme.png"
+								 srcset="img/nowyouseeme@2x.png 2x,
+										 img/nowyouseeme@3x.png 3x"
+							 />
+						</div>
+						<div class="movie-card__info">
+							<h2 class="movie-card__title">Now you see me 2</h2>
+							<p class="movie-card__movie-rating">4.4</p>
+							<p class="movie-card__genre">Action, Adventure, Comedy</p>
+						</div>
+					</a>
+				</li>
+				<li class="movies-catalog__list-item hidden">
+					<a href="#" class="movie-card">
+						<div class="movie-card__cover">
+							<img src="img/tarzan.jpg">
+						</div>
+						<div class="movie-card__info">
+							<h2 class="movie-card__title">The legend of tarzan</h2>
+							<p class="movie-card__movie-rating">4.3</p>
+							<p class="movie-card__genre">Action, Adventure, Drama</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="movies-catalog__preloader">loading</div>
+		</div>
+	</div>
+</body>
+</html>
