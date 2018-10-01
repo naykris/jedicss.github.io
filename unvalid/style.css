@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+img {
+	width: 100px;
+}
+
+p {
+	color: red !important;
+}
+
+
+p:nth-child(2){
+	color: red;
+}
+
+.class-1 .class-2 .class-3 {
+	background: orange;
+}
+
+.class-1 p {
+	color: blue;
+}
+
+#wrap {
+	padding: 20px 30px 40px 50px;
+}
