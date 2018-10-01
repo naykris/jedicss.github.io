@@ -16,7 +16,7 @@ p {
 
 
 p:nth-child(2){
-	color: red;
+	color: green;
 }
 
 .class-1 .class-2 .class-3 {
