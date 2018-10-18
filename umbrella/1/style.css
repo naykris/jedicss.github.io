@@ -1,0 +1,313 @@
+html {
+	font-family: "Open sans", sans-serif;
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+}
+
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	min-width:320px;
+	background-color: #f0f2f5;
+	color: #aab2bd;
+
+	display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrap {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.wrap--flex {
+	display: flex;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+					clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.base-header {
+	background-color: #fff;
+	box-shadow: 0 2px 0 0 rgba(1, 1, 1, 0.06);
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-right: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 120px;
+	padding-left: 48px;
+	line-height: 1;
+}
+
+.logo::before {
+	content: '';
+	margin-left: -48px;
+	margin-right: 2px;
+	width: 48px;
+	height: 48px;
+	flex-shrink: 0;
+	float: left;
+	background-image: url(img/sprite.png);
+	background-position: 0;
+}
+
+.logo__title {
+	display: block;
+	font-size: 16px;
+	color: #8cc152;
+	font-weight: bold;
+	font-style: italic;
+	text-transform:uppercase;
+	text-indent:4px;
+}
+
+.logo__description,
+.base-header__menu,
+.base-header__search {
+	display: none;
+}
+
+.base-header__show-btns {
+	display: flex;
+	margin-left: auto;
+	padding: 8px 0;
+}
+
+.show-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	border-radius: 4px;
+	border: none;
+	vertical-align: middle;
+}
+
+.show-btn:hover {
+	background-color: rgba(160, 212, 104, 0.8);
+}
+
+.show-btn::before {
+	content: '';
+	width: 24px;
+	height: 24px;
+	background-image: url(img/sprite.png);
+	background-repeat: no-repeat;
+}
+
+.show-btn--menu::before {
+	background-position: -56px -28px;
+}
+
+.show-btn--search::before {
+	background-position: -56px 0;
+}
+
+.show-btn--menu:hover::before {
+	background-position: -112px -28px;
+}
+
+.show-btn--search:hover::before {
+	background-position: -112px 0;
+}
+
+.base-content {
+	margin-top: 24px;
+	margin-bottom: 44px;
+}
+
+.slider{
+	border-radius: 4px;
+	background: #ff6d55;
+	padding-top: 42.38%; /*для пропорционального увеличения*/
+	margin-bottom: 24px;
+
+	height: 0;
+	overflow: hidden;
+}
+
+.price-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -8px;
+	padding: 0;
+	list-style: none;
+}
+
+.price-list__item{
+	width: 50%;
+	margin-bottom: 16px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.price-list__card {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+.rate-card {
+	padding: 12px 16px 0;
+	border-top: 4px solid transparent;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 0 0 rgba(1, 1, 1, 0.06);
+}
+
+.rate-card:hover {
+	border-top-color: var(--rate-card-color);
+}
+
+.rate-card:hover .rate-card__btn{
+	background-color: var(--rate-card-color);
+}
+
+.rate-card--starter {
+	--rate-card-color: #fc9d51;
+}
+
+.rate-card--basic {
+	--rate-card-color: #a0d468;
+}
+
+.rate-card--pro {
+	--rate-card-color: #55c1e7;
+}
+
+.rate-card--ultra {
+	--rate-card-color: #ff5555;
+}
+
+.rate-card__title {
+	margin-top: 0;
+	margin-bottom: 4px;
+	font-weight: normal;
+	font-size: 24px;
+	color: #434a54;
+}
+
+.rate-card__cost {
+	margin-top: 0;
+	margin-bottom: 10px;
+	color: var(--rate-card-color);
+}
+
+.rate-card__description {
+	margin-top: 0;
+	margin-bottom: 12px;
+	font-size: 12px;
+}
+
+.rate-card__btn {
+	margin-top: auto;
+	margin-left: -16px;
+	margin-right: -16px;
+	border-radius: 0 0 4px 4px;
+}
+
+.btn {
+	color: #fff;
+	font-size: 14px;
+	line-height: 32px;
+	text-transform:uppercase;
+	text-align: center;
+	background-color: #aab2bd;
+}
+
+.rate-card .rate-card__btn:hover,
+.btn:hover {
+	background-color: #bd55ff;
+}
+
+.base-footer {
+	background-color: #e6e9ed;
+	color: #434a54;
+	font-size: 13px;
+	padding: 8px;
+
+	margin-top: auto;
+}
+
+.base-footer a{
+	color: #434a54;
+	text-decoration: underline;
+}
+
+.base-footer a:hover {
+	color: #bd55ff;
+}
+
+@media (min-width: 720px) {
+	.wrap {
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+	
+	.slider {
+		margin-bottom: 32px;
+	}
+	
+	.price-list {
+		margin-left: -6px;
+		margin-right: -6px;
+	}
+
+	.price-list__item{
+		width: 25%;
+		margin-bottom: 32px;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	.rate-card {
+		padding: 12px;
+	}
+	
+	.rate-card__btn {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 2px;
+	}
+
+}
+
+@media (min-width: 960px) {
+	.wrap {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 940px;
+	}
+}
