@@ -1,5 +1,9 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 img {
-	height: 200px!important;
+	height: 100px!important;
 }
 
 #newId {
