@@ -28,3 +28,7 @@ img {
 #test-id {
 	background-color: #ccc !important;
 }
+
+.class #id {
+	background-color: #ccc !important;
+}
