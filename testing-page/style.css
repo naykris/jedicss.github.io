@@ -1,0 +1,29 @@
+html {
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.block {
+	padding: 24px !important;
+	margin: 12px!important;
+	background-color: #fff;
+}
+
+#test-id {
+	background-color: #ccc !important;
+}
