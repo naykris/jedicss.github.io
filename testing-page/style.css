@@ -32,3 +32,11 @@ img {
 .class #id {
 	background-color: #ccc !important;
 }
+
+.first-class .second-class p {
+	font-size: 2em;
+}
+
+.first-class .second-class div, .third-class {
+	font-size: 2em;
+}
